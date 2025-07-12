@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Editar manualmente un paquete -->
+    <EditText
+        android:id="@+id/editAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el nombre del paquete (opcional)" />
+
+    <!-- Botón para agregar manual -->
+    <Button
+        android:id="@+id/btnAddApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar manualmente"
+        android:backgroundTint="#952020"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Lista de apps bloqueadas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista negra actual:"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewApps"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lista de apps instaladas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apps instaladas:"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewInstalledApps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnResetUnlocks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reactivar bloqueos temporales"
+        android:backgroundTint="#952020"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

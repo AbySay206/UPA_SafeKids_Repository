@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#A7C0A4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Bienvenido a\nUPA KidsSafe"
+        android:textSize="24sp"
+        android:textColor="#4A0606"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:hint="Usuario"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:hint="Contraseña"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Iniciar sesión"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#952020"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
+
